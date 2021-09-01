@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#"> <img src="images/logo-small.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Books</a>
+                    </li>
+
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Author</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="banner-search">
+        <div class="container">
+            <div class="img text-center">
+                <img src="images/amagon.png" alt="">
+            </div>
+            <div class="main">
+                <input id="input" class="form-contro me-2 rounded p-3" type="search" placeholder="Search your books"
+                    aria-label="Search">
+                <button id="btn" onclick="seachBook()" class="btn btn-warning p-3" type="submit">Search</button>
+            </div>
+            <p class="text-center mt-4">Search the world's most comprehensive index of full-text books.</p>
+
+        </div>
+    </section>
+
+    <section id="displaySection">
+        <div class="container">
+            <h4 id="searchResult"></h4>
+            <div id="item" class="row row-cols-1 row-cols-lg-4 g-4">
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
