@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- css link start -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- css link end -->
 </head>
 
 <body>
-
+    <!-- nav part start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
         <div class="container">
             <a class="navbar-brand text-uppercase fw-bold" href="#"> <img src="images/logo-small.png" alt=""></a>
@@ -27,11 +29,14 @@
                         <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Books</a>
+                        <a class="nav-link active fw-bold text-dark" aria-current="page"
+                            href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155"
+                            target="_blank">Books</a>
                     </li>
 
                     <li class="nav-item mx-3">
-                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="#">Author</a>
+                        <a class="nav-link active fw-bold text-dark" aria-current="page"
+                            href="https://www.rokomari.com/book/authors?ref=sm_p0" target="_blank">Author</a>
                     </li>
 
                 </ul>
@@ -39,6 +44,10 @@
         </div>
     </nav>
 
+    <!-- nav part end -->
+
+
+    <!-- banner part input section start -->
     <section id="banner-search">
         <div class="container">
             <div class="img text-center">
@@ -54,25 +63,27 @@
         </div>
     </section>
 
+    <!-- banner search input section end -->
+
+    <!-- displaySection start -->
+
     <section id="displaySection">
         <div class="container">
-            <h4 id="searchResult"></h4>
+            <h3 id="searchResult" class="text-center mb-3"></h3>
             <div id="item" class="row row-cols-1 row-cols-lg-4 g-4">
 
             </div>
         </div>
-
     </section>
 
+    <!-- displaySection end -->
 
 
 
-
-
-
-
-
+    <!-- js link start -->
     <script src="js/script.js"></script>
+    <!-- js link end -->
+
 </body>
 
 </html>
