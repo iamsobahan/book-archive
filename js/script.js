@@ -15,11 +15,21 @@ const BookApiLoad = InputData => {
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            document.getElementById('searchResult').innerHTML = `${data.numFound} ${InputData} result found`;
-            displayData(data.docs);
+            const notFound = document.getElementById('notFound')
+            const searchResult = document.getElementById('searchResult')
+            const item = document.getElementById('item')
+
+            if (data.numFound === 0) {
+                item.innerHTML = '';
+                searchResult.innerHTML = ''
+                notFound.innerHTML = `<img src="images/nof.webp" alt="">`
+            } else {
+                notFound.innerHTML = ''
+                searchResult.innerHTML = `${data.numFound} ${InputData} result found`;
+                displayData(data.docs);
+            }
+
         })
-
-
 }
 
 // display data in browser Ui by dynamically using arrow function and foreach
@@ -27,7 +37,7 @@ const BookApiLoad = InputData => {
 const displayData = docsData => {
     const item = document.getElementById('item');
     item.innerHTML = '';
-    docsData.forEach(ele => {
+    docsData.filter(ele => {
         const div = document.createElement('div');
 
         div.classList.add('col');
